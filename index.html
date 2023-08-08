@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <!-- Ajout d'une balise title et d'une description -->
+    <title>Nina Carducci, photographe</title>
+    <meta
+      name="description"
+      content="Nina Carducci, photographe professionnelle pour vos shootings, retouches et créations d'albums photos"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./assets/bootstrap/bootstrap.css" />
     <link rel="stylesheet" href="./assets/style.css" />
@@ -14,7 +20,8 @@
   </head>
   <body>
     <div class="top-header">
-      <h3 class="name">Nina Carducci</h3>
+      <!-- Utilisation de la bonne balise h (anciennement h3) -->
+      <h1 class="name">Nina Carducci</h1>
       <div class="nav">
         <ul>
           <li><a href="#about">À propos</a></li>
@@ -108,13 +115,16 @@
         <img src="./assets/images/nina-min.png" />
       </div>
       <div id="about-me">
-        <h3 class="about-me__title">A propos de moi</h3>
-        <h6 class="about-me__introduction">
+        <!-- Utilisation de la bonne balise h (anciennement h3) -->
+        <h2 class="about-me__title">A propos de moi</h2>
+        <!-- Utilisation de la bonne balise p (anciennement h6) -->
+        <p class="about-me__introduction">
           Devenir photographe était pour moi une évidence. Comme si j’y étais
           prédestiné. Saisir un moment, une émotion, une situation, un endroit,
           une lumière et les rendre immortels, voilà ce qui me fait vibrer.
-        </h6>
-        <p>
+        </p>
+        <!-- Ajout d'une classe pour meilleur manipulation en CSS -->
+        <p class="about-me__content">
           Nous passons notre vie à chercher le bonheur, et lorsque nous y
           touchons, nous n’avons qu’une envie: le figer au travers de
           photographies pour le savourer avec les personnes qui sont importantes
@@ -127,7 +137,8 @@
       </div>
     </div>
     <div id="gallery">
-      <h3 class="title">Portfolio</h3>
+      <!-- Utilisation de la bonne balise h (anciennement h3) -->
+      <h2 class="title">Portfolio</h2>
       <div class="container py-3">
         <div class="gallery" style="display: none">
           <img
@@ -180,19 +191,21 @@
       <div class="quote">
         <figure>
           <blockquote>
-            <h1 class="quote__text">
+            <!-- Utilisation de la bonne balise p (anciennement h1) -->
+            <p class="quote__text">
               Un portrait n’est pas une ressemblance. Dès lors qu’une émotion ou
               qu’un fait est traduit en photo, il cesse d’être un fait pour
               devenir une opinion. L’inexactitude n’existe pas en photographie.
               Toutes les photos sont exactes. Aucune d’elles n’est la vérité.
-            </h1>
+            </p>
           </blockquote>
           <figcaption class="quote__author">- Richard Avedon</figcaption>
         </figure>
       </div>
     </div>
     <div id="services">
-      <h3 class="title">Mes services</h3>
+      <!-- Utilisation de la bonne balise h (anciennement h3) -->
+      <h2 class="title">Mes services</h2>
       <div class="container">
         <div class="service">
           <div class="service__description">
@@ -205,7 +218,7 @@
           </div>
           <div class="service__price">
             <h4>350€/demi journée</h4>
-            <span>Matériel, déplacement inclus</span>
+            <sp>Matériel, déplacement inclus</span>
           </div>
         </div>
         <div class="service">
@@ -239,11 +252,12 @@
     <div class="quote">
       <figure>
         <blockquote>
-          <h1 class="quote__text">
+          <!-- Utilisation de la bonne balise p (anciennement h1) -->
+          <p class="quote__text">
             De manière inconsciente, je crois, je guette un regard, une
             expression, des traits ou une nostalgie capable de résumer ou plus
             exactement de révéler une vie
-          </h1>
+          </p>
         </blockquote>
         <figcaption class="quote__author">- Richard Avedon</figcaption>
       </figure>
@@ -251,7 +265,8 @@
     <div id="contact">
       <div class="container">
         <div class="form-container">
-          <h3>Une question ? Une demande de devis ?</h3>
+          <!-- Utilisation de la bonne balise h2 (anciennement h3) et ajout d'une classe pour meilleuire manipulation en CSS -->
+          <h2 class="form__title">Une question ? Une demande de devis ?</h2>
           <p>
             N’hésitez pas à m’écrire ! Je vous répondrais en moins de 24 heures
           </p>

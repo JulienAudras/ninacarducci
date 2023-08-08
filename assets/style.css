@@ -65,15 +65,13 @@ body {
 	flex: 1;
 	margin: 0 20px;
 	z-index: 0;
-	position: relative;
-	padding-bottom: calc(329 / 374 * 100%); 
-
+	overflow: hidden;
 }
 
 .picture img {
 	width: 100%;
-	height: 100%;
-	position: absolute;
+	/* width: 374px;
+	height: 329px; */
 
 }
 #about-me {
@@ -89,8 +87,9 @@ body {
 	font-weight: 800;
 	font-style: italic;
 	width: 60%;
+	font-size: 1rem;
 }
-#about-me p {
+.about-me__content {
 	width: 80%;
 	font-size: 14px;
 }
@@ -101,6 +100,8 @@ body {
 .title{
 	text-align: center;
 	padding-block: 2em;
+	/* Ajout de la bonne taille de police suite a changement de balise (de h3 à h2) */
+	font-size: 1.75em;
 }
 .gallery .nav {
 	justify-content: center;
@@ -152,6 +153,9 @@ body {
 	font-family: Spectral;
 	font-style: italic;
 	font-weight: 300;
+	/* Ajout d'une taille de police et d'une hauteur de ligne suite à la modification de la balise (h1 pour p) */
+	font-size: 2.5em;
+	line-height: 1.2;
 
 }
 .quote__author {
@@ -195,6 +199,9 @@ body {
 	z-index: 1;
 }
 
+.form__title{
+	font-size: 1.75em;
+}
 #contact {
 	margin: auto;
 	background-color: #D8D3A8 ;
