@@ -258,12 +258,23 @@ input[type="submit"] {
 	padding: .5em 1em
 }
 
-/* Style de la carte */
-#map{
-	height:400px;
-	width:50%;
-	/* background-color: #000; */
+.telephone{
+	display: flex;
+	gap: 10px;
+	justify-content: center;
+	margin-top: 35px;
 }
+
+.fa-phone-volume{
+	padding-top: 5px;
+}
+
+.phoneNumber a{
+	text-decoration: none;
+	color: inherit;
+}
+
+
 
 @media all and (max-width: 1180px) {
 	.picture {
