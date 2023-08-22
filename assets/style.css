@@ -258,6 +258,13 @@ input[type="submit"] {
 	padding: .5em 1em
 }
 
+/* Style de la carte */
+#map{
+	height:400px;
+	width:50%;
+	/* background-color: #000; */
+}
+
 @media all and (max-width: 1180px) {
 	.picture {
 		flex : 2;

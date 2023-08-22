@@ -26,8 +26,15 @@
     <meta property="og:image" content="https://julienaudras.github.io/ninacarducci/assets/images/nina-min.png"/>
     <meta property="og:description" content="Nina Carducci, photographe professionnelle à Bordeaux pour vos shootings, retouches et créations d'albums photos"/>
 
+    <!-- Liens vers les données liés -->
+    <script type="application/ld+json" src="linkedDatas.json"></script>
+
     <!-- Balise google engine -->
+    
+
     <meta name="google-site-verification" content="oQ66lwjGJUYcCd9Cn8R42c9huOc3yy3pn_RILnP0hIY" />
+     
+  <script type="module" src="map.js"></script>
   </head>
   <body>
     <!-- Ajout de l'attribut alt à toutes les images -->
@@ -320,5 +327,58 @@
     <script src="./assets/maugallery.js"></script>
     <script src="./assets/scripts.js"></script>
   <!-- Intégration d'un store locator, des horraires et du téléphone clickable??-->
+  <div id="infosPratiques">
+    <h2 class="title">Infos Pratiques</h2>
+    <div class="physique">
+      <div id="map"></div>
+      <div class="horaires">
+        <h3 class="infosPratiques-sectionTitles">Horraires d'ouverture</h3>
+        <table>
+          <tr>
+            <td>Lundi</td>
+            <td>10:00 - 19:00</td>
+          </tr>
+          <tr>
+            <td>Mardi</td>
+            <td>10:00 - 19:00</td>
+          </tr>
+          <tr>
+            <td>Mercredi</td>
+            <td>10:00 - 19:00</td>
+          </tr>
+          <tr>
+            <td>Jeudi</td>
+            <td>10:00 - 19:00</td>
+          </tr>
+          <tr>
+            <td>Vendredi</td>
+            <td>10:00 - 19:00</td>
+          </tr>
+          <tr>
+            <td>Samedi</td>
+            <td>Fermé</td>
+          </tr>
+          <tr>
+            <td>Dimanche</td>
+            <td>Fermé</td>
+          </tr>
+        </table>
+
+      </div>
+    </div>
+    <div class="telephone" itemscope itemtype="http://microformats.org/profile/hcard">
+      <h3 class="infosPratiques-sectionTitles">Téléphone</h3>
+      <p itemprop="tel"><a href="tel:+331556677889">05 56 67 78 89</a></p>
+    </div>
+  </div>
+   <!-- Scripts pour le store locator -->
+   <script>
+    (g=>{var h,a,k,p="The Google Maps JavaScript API",c="google",l="importLibrary",q="__ib__",m=document,b=window;b=b[c]||(b[c]={});var d=b.maps||(b.maps={}),r=new Set,e=new URLSearchParams,u=()=>h||(h=new Promise(async(f,n)=>{await (a=m.createElement("script"));e.set("libraries",[...r]+"");for(k in g)e.set(k.replace(/[A-Z]/g,t=>"_"+t[0].toLowerCase()),g[k]);e.set("callback",c+".maps."+q);a.src=`https://maps.${c}apis.com/maps/api/js?`+e;d[q]=f;a.onerror=()=>h=n(Error(p+" could not load."));a.nonce=m.querySelector("script[nonce]")?.nonce||"";m.head.append(a)}));d[l]?console.warn(p+" only loads once. Ignoring:",g):d[l]=(f,...n)=>r.add(f)&&u().then(()=>d[l](f,...n))})({
+      key: "AIzaSyCRqkKQS1n4PUWjs1IFLN54RV8kySGpEJU",
+    });
+  </script>
+
+  
   </body>
 </html>
+<!-- AIzaSyCRqkKQS1n4PUWjs1IFLN54RV8kySGpEJU -->
