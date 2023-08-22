@@ -261,8 +261,6 @@ input[type="submit"] {
 .telephone{
 	display: flex;
 	gap: 10px;
-	
-	/* margin-top: 35px; */
 	width: 100%;
 }
 
