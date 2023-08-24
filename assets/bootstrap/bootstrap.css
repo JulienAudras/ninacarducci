@@ -6694,9 +6694,9 @@ textarea.form-control-lg {
   display: inline-block !important;
 }
 
-.d-block {
+/* .d-block {
   display: block !important;
-}
+} */
 
 .d-grid {
   display: grid !important;

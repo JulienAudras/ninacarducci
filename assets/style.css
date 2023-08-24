@@ -270,6 +270,22 @@ input[type="submit"] {
 	color: inherit;
 }
 
+.w-100{
+	display: block;
+}
+
+.w-1180{
+	display: none;
+}
+
+.w-1000{
+	display: none;
+}
+
+.w-650{
+	display: none;
+}
+
 
 
 @media all and (max-width: 1180px) {
@@ -285,6 +301,14 @@ input[type="submit"] {
 	}
 	#about-me h6, #about-me p {
 		width: 100%;
+	}
+
+	.w-100{
+		display: none;
+	}
+
+	.w-1180{
+		display: block;
 	}
 }
 
@@ -345,6 +369,14 @@ input[type="submit"] {
 		right: 0;
 		z-index: -1;
 	}
+
+	.w-1180{
+		display: none;
+	}
+
+	.w-1000{
+		display: block;
+	}
 }
 
 @media all and (max-width: 650px) {
@@ -379,6 +411,14 @@ input[type="submit"] {
 	}
 	.picture {
 		width: 80%;
+	}
+
+	.w-1000{
+		display: none;
+	}
+
+	.w-650{
+		display: block;
 	}
 }
 
