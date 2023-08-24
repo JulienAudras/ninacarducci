@@ -324,32 +324,26 @@ input[type="submit"] {
 
 .w-100{
 	display: block;
-	width: 1920px;
-	height: 888px;
+	max-width: 100%;
+	
 }
 
 .w-1180{
 	display: none;
-	width: 1180px;
+	max-width: 1180px;
 	height: 545px;
 }
 
 .w-1000{
 	display: none;
-	width: 1000px;
+	max-width: 1000px;
 	height: 461px;
 }
 
 .w-650{
 	display: none;
-	width: 650px;
+	max-width: 650px;
 	height: 299px;
-}
-
-.w-420{
-	display: none;
-	width: 420px;
-	height: 193px;
 }
 
 
@@ -443,7 +437,7 @@ input[type="submit"] {
 	.w-1000{
 		display: block;
 	}
-	
+
 }
 
 @media all and (max-width: 650px) {
@@ -489,13 +483,3 @@ input[type="submit"] {
 	}
 }
 
-@media all and (max-width: 420px) {
-
-	.w-650{
-		display: none;
-	}
-
-	.w-420{
-		display: block;
-	}
-}
