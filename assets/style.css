@@ -322,9 +322,10 @@ input[type="submit"] {
 	color: inherit;
 }
 
-.w-100{
+.w-1920{
 	display: block;
-	max-width: 100%;
+	max-width: 1920px;
+	height: 888px;
 	
 }
 
@@ -363,7 +364,7 @@ input[type="submit"] {
 		width: 100%;
 	}
 
-	.w-100{
+	.w-1920{
 		display: none;
 	}
 
