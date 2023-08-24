@@ -324,18 +324,26 @@ input[type="submit"] {
 
 .w-100{
 	display: block;
+	width: 1920px;
+	height: 888px;
 }
 
 .w-1180{
 	display: none;
+	width: 1180px;
+	height: 545px;
 }
 
 .w-1000{
 	display: none;
+	width: 1000px;
+	height: 461px;
 }
 
 .w-650{
 	display: none;
+	width: 650px;
+	height: 299px;
 }
 
 
