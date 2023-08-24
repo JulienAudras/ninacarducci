@@ -346,6 +346,12 @@ input[type="submit"] {
 	height: 299px;
 }
 
+.w-420{
+	display: none;
+	width: 420px;
+	height: 193px;
+}
+
 
 
 @media all and (max-width: 1180px) {
@@ -482,3 +488,13 @@ input[type="submit"] {
 	}
 }
 
+@media all and (max-width: 420px) {
+
+	.w-650{
+		display: none;
+	}
+
+	.w-420{
+		display: block;
+	}
+}
