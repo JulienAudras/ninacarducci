@@ -4,5 +4,15 @@
   },
   "dependencies": {
     "clean-css": "^5.3.2"
-  }
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "name": "ninacarducci",
+  "version": "1.0.0",
+  "main": "map.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
 }
