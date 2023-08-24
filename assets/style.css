@@ -443,6 +443,7 @@ input[type="submit"] {
 	.w-1000{
 		display: block;
 	}
+	
 }
 
 @media all and (max-width: 650px) {
