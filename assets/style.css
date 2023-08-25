@@ -294,7 +294,7 @@ input[type="submit"] {
 .w-1920{
 	display: block;
 	max-width: 1920px;
-	height: 888px;
+	max-height: 888px;
 	position:center;
 	
 }
@@ -302,19 +302,25 @@ input[type="submit"] {
 .w-1180{
 	display: none;
 	max-width: 1180px;
-	height: 545px;
+	max-height: 545px;
 }
 
 .w-1000{
 	display: none;
 	max-width: 1000px;
-	height: 461px;
+	max-height: 461px;
 }
 
 .w-650{
 	display: none;
 	max-width: 650px;
-	height: 299px;
+	max-height: 299px;
+}
+
+.w-420{
+	display: none;
+	max-width: 420px;
+	max-height: 192px;
 }
 
 .toChangeContentLater{
@@ -456,3 +462,12 @@ input[type="submit"] {
 	}
 }
 
+@media all and (max-width: 420px) {
+	.w-650{
+		display: none;
+	}
+
+	.w-420{
+		display: block;
+	}
+}
