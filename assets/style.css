@@ -317,7 +317,9 @@ input[type="submit"] {
 	height: 299px;
 }
 
-
+.toChangeContentLater{
+	display: none;
+}
 
 @media all and (max-width: 1180px) {
 	.picture {
