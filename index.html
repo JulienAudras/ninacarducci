@@ -34,7 +34,7 @@
     <meta name="twitter:creator" content="@nina_carducci">
     <meta name="twitter:image" content="https://julienaudras.github.io/ninacarducci/assets/images/nina-min.webp">
 
-    <!-- Rich Snipets -->
+    <!-- Données structurées avec JSON-LD pour les informations de l'entreprise-->
     <script type="application/ld+json">
       {
         "@context": "http://schema.org",
@@ -111,55 +111,70 @@
             aria-label="Slide 3"
           ></button>
         </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
+        <div itemscope itemtype="https://schema.org/ImageGallery" class="carousel-inner">
+          <div itemprop="hasPart" itemscope itemtype="https://schema.org/ImageObject" class="carousel-item active">
             <img
+              itemprop="image"
               src="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash-min.webp"
               class="d-block w-1920"
               alt="homme de dos traversant la rue"/>
               <img
+              itemprop="image"
               src="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash-min_1.webp"
               class="d-block w-1180"
               alt="homme de dos traversant la rue"/>
               <img
+              itemprop="image"
               src="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash-min_2.webp"
               class="d-block w-1000"
               alt="homme de dos traversant la rue"/>
               <img
+              itemprop="image"
               src="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash-min_3.webp"
               class="d-block w-650"
               alt="homme de dos traversant la rue"/>
           </div>
-          <div class="carousel-item">
+          <div itemprop="hasPart" itemscope itemtype="https://schema.org/ImageObject" class="carousel-item">
             <img
+              itemprop="image"
               src="./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash-min.webp"
               class="d-block w-1920"
               alt="public de concert heureux"/>
               <img
+              itemprop="image"
               src="./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash-min_1.webp"
               class="d-block w-1180"
               alt="public de concert heureux"/>
               <img
+              itemprop="image"
               src="./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash-min_2.webp"
               class="d-block w-1000"
               alt="public de concert heureux"/>
               <img
+              itemprop="image"
               src="./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash-min_3.webp"
               class="d-block w-650"
               alt="public de concert heureux"/>
           </div>
-          <div class="carousel-item">
+          <div itemprop="hasPart" itemscope itemtype="https://schema.org/ImageObject" class="carousel-item">
             <img
+              itemprop="image"
               src="./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash-min.webp"
               class="d-block w-1920"
               alt="mariés s'embrassants"/>
-              <img src="./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash-min_1.webp"
+              <img 
+              itemprop="image"
+              src="./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash-min_1.webp"
               class="d-block w-1180"
               alt="mariés s'embrassants"/>
-              <img src="./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash-min_2.webp"
+              <img 
+              itemprop="image"
+              src="./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash-min_2.webp"
               class="d-block w-1000"
               alt="mariés s'embrassants"/>
-              <img src="./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash-min_3.webp"
+              <img 
+              itemprop="image"
+              src="./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash-min_3.webp"
               class="d-block w-650"
               alt="mariés s'embrassants"/>
           </div>
@@ -185,18 +200,18 @@
       </div>
     </div>
  
-    <div id="about">
+    <div itemprop="section" id="about" >
       <div class="picture left">
-        <img src="./assets/images/nina-min.webp" alt="portrait de Nina Carducci" width="374" height="329" loading="lazy" />
+        <img itemprop="image" src="./assets/images/nina-min.webp" alt="portrait de Nina Carducci" width="374" height="329"/>
       </div>
-      <div id="about-me">
+      <div itemscope itemtype="https://schema.org/Person" id="about-me">
         <h2>A propos de moi</h2>
-        <p class="introduction">
+        <p itemprop="description" class="introduction">
           Devenir photographe était pour moi une évidence. Comme si j’y étais
           prédestiné. Saisir un moment, une émotion, une situation, un endroit,
           une lumière et les rendre immortels, voilà ce qui me fait vibrer.
         </p>
-        <p>
+        <p itemprop="text">
           Nous passons notre vie à chercher le bonheur, et lorsque nous y
           touchons, nous n’avons qu’une envie: le figer au travers de
           photographies pour le savourer avec les personnes qui sont importantes
@@ -208,24 +223,27 @@
         </p>
       </div>
     </div>
-    <div id="gallery">
+    <div itemprop="section" id="gallery">
       <!-- Utilisation de la bonne balise h (anciennement h3) -->
       <h2 class="title">Portfolio</h2>
       <div class="container py-3">
-        <div class="gallery" style="display: none">
+        <div itemscope itemtype="https://schema.org/ImageGallery" class="gallery" style="display: none">
           <img
+            itemprop="image"
             data-gallery-tag="Concert"
             class="gallery-item"
             src="./assets/images/gallery/concerts/aaron-paul-wnX-fXzB6Cw-unsplash-min.webp"
             alt="Concert en intérieur, photo prise depuis la foule"
           />
           <img
+            itemprop="image"
             data-gallery-tag="Entreprises"
             class="gallery-item"
             src="./assets/images/gallery/entreprise/ali-morshedlou-WMD64tMfc4k-unsplash-min.webp"
             alt="portrait d'un jeune homme d'affaire en costume"
           />
           <img
+            itemprop="image"
             data-gallery-tag="Entreprises"
             class="gallery-item"
             src="./assets/images/gallery/entreprise/jason-goodman-tHO1_OuKbg0-unsplash-min.webp"
@@ -233,36 +251,42 @@
           />
   
           <img
+            itemprop="image"
             data-gallery-tag="Mariages"
             class="gallery-item"
             src="./assets/images/gallery/mariage/hannah-busing-RvF2R_qMpRk-unsplash-min.webp"
             alt="gros plan sur les mains de deux mariés"
           />
           <img
+            itemprop="image"          
             data-gallery-tag="Portrait"
             class="gallery-item"
             src="./assets/images/gallery/portraits/ade-tunji-rVkhWWZFAtQ-unsplash-min.webp"
             alt="portrait d'un homme fermant les yeux"
           />
           <img
+            itemprop="image"
             data-gallery-tag="Mariages"
             class="gallery-item"
             src="./assets/images/gallery/mariage/jakob-owens-SiniLJkXhMc-unsplash-min.webp"
             alt="couple de marié en costume et robe"
           />
           <img
+            itemprop="image"
             data-gallery-tag="Portrait"
             class="gallery-item"
             src="./assets/images/gallery/portraits/nino-van-prattenburg--443cl1uR_8-unsplash-min.webp"
             alt="portrait d'une jeune femme à lunettes"
           />
           <img
+            itemprop="image"
             data-gallery-tag="Concert"
             class="gallery-item"
             src="./assets/images/gallery/concerts/austin-neill-hgO1wFPXl3I-unsplash-min.webp"
             alt="chanteur pendant un concert"
           />
           <img
+            itemprop="image"
             data-gallery-tag="Entreprises"
             class="gallery-item"
             src="./assets/images/gallery/entreprise/mateus-campos-felipe-Fsgzm8N0hIY-unsplash-min.webp"
@@ -272,48 +296,49 @@
       </div>
       <div class="quote">
         <figure>
-          <blockquote>
+          <blockquote itemprop="citation" itemscope itemtype="https://schema.org/CreativeWork">
             <!-- Utilisation de la bonne balise p (anciennement h1) -->
-            <p class="quote__text">
+            <p itemprop="text" class="quote__text">
               Un portrait n’est pas une ressemblance. Dès lors qu’une émotion ou
               qu’un fait est traduit en photo, il cesse d’être un fait pour
               devenir une opinion. L’inexactitude n’existe pas en photographie.
               Toutes les photos sont exactes. Aucune d’elles n’est la vérité.
             </p>
+            <meta itemprop="author" content="Richard Avedon">
           </blockquote>
           <figcaption class="quote__author">- Richard Avedon</figcaption>
         </figure>
       </div>
     </div>
-    <div id="services">
+    <div itemprop="section" id="services">
       <!-- Utilisation de la bonne balise h (anciennement h3) -->
       <h2 class="title">Mes services</h2>
       <div class="container">
-        <div class="service">
+        <div itemscope itemtype="https://schema.org/Product" class="service">
           <div class="service__description">
-            <h3>Shooting photo</h3>
-            <p>
+            <h3 itemprop="name">Shooting photo</h3>
+            <p itemprop="description">
               Pour capturer vos moments les plus précieux et garder un souvenir
               impérissable. Je me déplace en Île-de-France pour réaliser vos
               photos
             </p>
           </div>
           <div class="service__price">
-            <h4>350€/demi journée</h4>
-            <sp>Matériel, déplacement inclus</span>
+            <h4 itemprop="price">350€/demi journée</h4>
+            <span itemprop="offers">Matériel, déplacement inclus</span>
           </div>
         </div>
-        <div class="service">
+        <div itemscope itemtype="https://schema.org/Product" class="service">
           <div class="service__description">
-            <h3>Retouches</h3>
-            <p>
+            <h3 itemprop="name">Retouches</h3>
+            <p itemprop="description">
               Vous souhaitez retoucher vos photos pour un résultat professionnel
               ? Bénéficier d’un rendu optimal pour vos publications
             </p>
           </div>
-          <div class="service__price">
-            <h4>50€/photo</h4>
-            <span>2 AR par photo</span>
+          <div>
+            <h4 itemprop="price">50€/photo</h4>
+            <span itemprop="offers">2 AR par photo</span>
           </div>
         </div>
         <div class="service">
@@ -325,26 +350,27 @@
             </p>
           </div>
           <div class="service__price">
-            <h4>400€ album A4</h4>
-            <span>30 pages recto/verso</span>
+            <h4 itemprop="price">400€ album A4</h4>
+            <span itemprop="offers">30 pages recto/verso</span>
           </div>
         </div>
       </div>
     </div>
     <div class="quote">
       <figure>
-        <blockquote>
+        <blockquote itemprop="citation" itemscope itemtype="https://schema.org/CreativeWork">
           <!-- Utilisation de la bonne balise p (anciennement h1) -->
-          <p class="quote__text">
+          <p itemprop="text" class="quote__text">
             De manière inconsciente, je crois, je guette un regard, une
             expression, des traits ou une nostalgie capable de résumer ou plus
             exactement de révéler une vie
           </p>
+          <meta itemprop="author" content="Richard Avedon">
         </blockquote>
         <figcaption class="quote__author">- Richard Avedon</figcaption>
       </figure>
     </div>
-    <div id="contact">
+    <div itemprop="section" id="contact">
       <div class="container">
         <div class="form-container">
           <!-- Utilisation de la bonne balise h2 (anciennement h3) et ajout d'une classe pour meilleuire manipulation en CSS -->
@@ -353,7 +379,7 @@
             N’hésitez pas à m’écrire ! Je vous répondrais en moins de 24 heures
           </p>
           <!-- Ajout du numero de telephone -->
-          <form action="" method="post">
+          <form itemscope itemtype="https://schema.org/ContactPoint" action="" method="post">
             <label for="nom">Nom</label>
             <input type="text" name="nom" id="nom" />
             <label for="email">Email</label>
@@ -373,7 +399,7 @@
             </div>
         </div>
         <div class="picture right">
-          <img src="./assets/images/camera-min.webp" alt="appareil photo"/>
+          <img itemprop="image" src="./assets/images/camera-min.webp" alt="appareil photo"/>
         </div>
       </div>
   
