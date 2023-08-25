@@ -61,8 +61,10 @@
     </script>
 
   </head>
+
   <body>
     <!-- Ajout de l'attribut alt à toutes les images -->
+    
     <div class="top-header">
       <!-- Utilisation de la bonne balise h (anciennement h3) -->
       <h1 class="name">Nina Carducci</h1>
@@ -83,6 +85,7 @@
         </ul>
       </div>
     </div>
+
     <div id="header">
       <div
         id="carouselExampleIndicators"
@@ -310,6 +313,7 @@
         </figure>
       </div>
     </div>
+    
     <div itemprop="section" id="services">
       <!-- Utilisation de la bonne balise h (anciennement h3) -->
       <h2 class="title">Mes services</h2>
@@ -323,9 +327,9 @@
               photos
             </p>
           </div>
-          <div class="service__price">
+          <div itemprop="offers" class="service__price">
             <h4 itemprop="price">350€/demi journée</h4>
-            <span itemprop="offers">Matériel, déplacement inclus</span>
+            <span itemprop="text">Matériel, déplacement inclus</span>
           </div>
         </div>
         <div itemscope itemtype="https://schema.org/Product" class="service">
@@ -336,9 +340,9 @@
               ? Bénéficier d’un rendu optimal pour vos publications
             </p>
           </div>
-          <div>
+          <div itemprop="offers" class="service__price">
             <h4 itemprop="price">50€/photo</h4>
-            <span itemprop="offers">2 AR par photo</span>
+            <span itemprop="text">2 AR par photo</span>
           </div>
         </div>
         <div class="service">
@@ -349,9 +353,9 @@
               partagés ensemble à travers un album photo personnalisé
             </p>
           </div>
-          <div class="service__price">
+          <div itemprop="offers" class="service__price">
             <h4 itemprop="price">400€ album A4</h4>
-            <span itemprop="offers">30 pages recto/verso</span>
+            <span itemprop="text">30 pages recto/verso</span>
           </div>
         </div>
       </div>
@@ -370,6 +374,7 @@
         <figcaption class="quote__author">- Richard Avedon</figcaption>
       </figure>
     </div>
+    
     <div itemprop="section" id="contact">
       <div class="container">
         <div class="form-container">
@@ -402,7 +407,6 @@
           <img itemprop="image" src="./assets/images/camera-min.webp" alt="appareil photo"/>
         </div>
       </div>
-  
     </div>
     <script src="./assets/bootstrap/bootstrap.bundle.js"></script>
     <script
@@ -413,6 +417,5 @@
     <script defer src="./assets/maugallery.js"></script>
     <script defer src="./assets/scripts.js"></script>
 
-  
   </body>
 </html>
