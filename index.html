@@ -79,6 +79,7 @@
               class="social-link"
               href="https://www.instagram.com/ninacarducci.photo/?hl=fr"
               target="_blank"
+              aria-label="Page Instagram de Nina Carducci"
               ><img src="assets/images/instagram.webp" alt="logo instagram"
             /></a>
           </li>
@@ -115,7 +116,12 @@
           ></button>
         </div>
         <div itemscope itemtype="https://schema.org/ImageGallery" class="carousel-inner">
-          <div itemprop="hasPart" itemscope itemtype="https://schema.org/ImageObject" class="carousel-item active">
+          <div 
+            itemprop="hasPart" 
+            itemscope itemtype="https://schema.org/ImageObject" 
+            class="carousel-item active"
+            role="tabpanel"
+            aria-label="Image du carrousel 1">
             <img
               itemprop="image"
               src="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash-min.webp"
@@ -142,7 +148,13 @@
               class="d-block w-420"
               alt="homme de dos traversant la rue"/>
           </div>
-          <div itemprop="hasPart" itemscope itemtype="https://schema.org/ImageObject" class="carousel-item">
+          <div 
+            itemprop="hasPart" 
+            itemscope itemtype="https://schema.org/ImageObject" 
+            class="carousel-item"
+            class="carousel-item active"
+            role="tabpanel"
+            aria-label="Image du carrousel 2">
             <img
               itemprop="image"
               src="./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash-min.webp"
@@ -169,7 +181,14 @@
               class="d-block w-420"
               alt="public de concert heureux"/>
           </div>
-          <div itemprop="hasPart" itemscope itemtype="https://schema.org/ImageObject" class="carousel-item">
+          <div 
+            itemprop="hasPart" 
+            itemscope 
+            itemtype="https://schema.org/ImageObject" 
+            class="carousel-item"
+            class="carousel-item active"
+            role="tabpanel"
+            aria-label="Image du carrousel 3">
             <img
               itemprop="image"
               src="./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash-min.webp"
@@ -218,7 +237,7 @@
       </div>
     </div>
  
-    <div itemprop="section" id="about" >
+    <div itemprop="section" id="about" role="region" aria-label="À propos de moi" >
       <div class="picture left">
         <img itemprop="image" src="./assets/images/nina-min.webp" alt="portrait de Nina Carducci" width="374" height="329"/>
       </div>
@@ -241,7 +260,7 @@
         </p>
       </div>
     </div>
-    <div itemprop="section" id="gallery">
+    <div itemprop="section" id="gallery" role="region" aria-label="Galerie de photos">
       <!-- Utilisation de la bonne balise h (anciennement h3) -->
       <h2 class="title">Portfolio</h2>
       <div class="container py-3">
@@ -329,7 +348,7 @@
       </div>
     </div>
     
-    <div itemprop="section" id="services">
+    <div itemprop="section" id="services" role="region" aria-label="Mes services">
       <!-- Utilisation de la bonne balise h (anciennement h3) -->
       <!-- Les rich snipets de produits DOIVENT avoir une image, je l'ai masqué et il faudrait réfléchir à des images appropriés -->
       <h2 class="title">Mes services</h2>
@@ -415,7 +434,7 @@
       </figure>
     </div>
     
-    <div itemprop="section" id="contact">
+    <div itemprop="section" id="contact" role="region" aria-label="Contactez-moi">
       <div class="container">
         <div class="form-container">
           <!-- Utilisation de la bonne balise h2 (anciennement h3) et ajout d'une classe pour meilleuire manipulation en CSS -->
